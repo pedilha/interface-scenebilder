@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interdacescenebuilder.Cena">
+<AnchorPane prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interdacescenebuilder.HelloController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="formulario de contrato">
          <font>
@@ -21,8 +21,8 @@
       <TextArea layoutX="182.0" layoutY="117.0" prefHeight="39.0" prefWidth="397.0" text="E-mail" wrapText="true" />
       <TextArea layoutX="182.0" layoutY="171.0" prefHeight="39.0" prefWidth="397.0" text="## ### ########" wrapText="true" />
       <ChoiceBox layoutX="182.0" layoutY="227.0" prefHeight="39.0" prefWidth="397.0" />
-      <TextField layoutX="181.0" layoutY="280.0" prefHeight="61.0" prefWidth="398.0" />
-      <Button layoutX="172.0" layoutY="350.0" mnemonicParsing="false" text="Enviar Formulário de Contato" textAlignment="CENTER" underline="true">
+      <TextField alignment="TOP_LEFT" layoutX="181.0" layoutY="280.0" prefHeight="61.0" prefWidth="398.0" />
+      <Button layoutX="172.0" layoutY="377.0" mnemonicParsing="false" text="Enviar Formulário de Contato" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
