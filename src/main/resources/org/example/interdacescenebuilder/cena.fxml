@@ -4,29 +4,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interdacescenebuilder.HelloController">
+<AnchorPane prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.interdacescenebuilder.HelloController">
    <Label layoutX="14.0" layoutY="14.0" text="formulario de contrato">
       <font>
-         <Font size="24.0"/>
+         <Font size="24.0" />
       </font>
    </Label>
-   <Label layoutX="26.0" layoutY="76.0" text="nome *"/>
-   <Label layoutX="25.0" layoutY="128.0" text="E-mail *"/>
-   <Label layoutX="26.0" layoutY="227.0" prefHeight="25.0" prefWidth="48.0" text="Assunto*"/>
-   <Label layoutX="24.0" layoutY="182.0" text="Telefone*"/>
-   <Label layoutX="18.0" layoutY="280.0" text="Mensagem*"/>
-   <TextArea layoutX="182.0" layoutY="65.0" prefHeight="38.0" prefWidth="188.0" text="Nome" wrapText="true"/>
-   <TextArea layoutX="392.0" layoutY="65.0" prefHeight="38.0" prefWidth="188.0" text="Sobrenome" wrapText="true"/>
-   <TextArea layoutX="182.0" layoutY="117.0" prefHeight="39.0" prefWidth="397.0" text="E-mail" wrapText="true"/>
-   <TextArea layoutX="182.0" layoutY="171.0" prefHeight="39.0" prefWidth="397.0" text="## ### ########"
-             wrapText="true"/>
-   <ChoiceBox layoutX="182.0" layoutY="227.0" prefHeight="39.0" prefWidth="397.0"/>
-   <TextField alignment="TOP_LEFT" layoutX="181.0" layoutY="280.0" prefHeight="61.0" prefWidth="398.0"/>
-   <Button layoutX="172.0" layoutY="377.0" mnemonicParsing="false" text="Enviar Formulário de Contato"
-           textAlignment="CENTER" wrapText="true">
+   <Label layoutX="26.0" layoutY="76.0" text="nome *" />
+   <Label layoutX="25.0" layoutY="128.0" text="E-mail *" />
+   <Label layoutX="26.0" layoutY="227.0" prefHeight="25.0" prefWidth="48.0" text="Assunto*" />
+   <Label layoutX="24.0" layoutY="182.0" text="Telefone*" />
+   <Label layoutX="18.0" layoutY="280.0" text="Mensagem*" />
+   <TextArea fx:id="lbNome" layoutX="182.0" layoutY="65.0" prefHeight="38.0" prefWidth="188.0" promptText="Nome" wrapText="true" />
+   <TextArea fx:id="lbSobrenome" layoutX="392.0" layoutY="65.0" prefHeight="38.0" prefWidth="188.0" promptText="Sobrenome" wrapText="true" />
+   <TextArea fx:id="lbEmail" layoutX="182.0" layoutY="117.0" prefHeight="39.0" prefWidth="397.0" promptText="E-mail" wrapText="true" />
+   <TextArea fx:id="lbTelefone" layoutX="182.0" layoutY="171.0" prefHeight="39.0" prefWidth="397.0" promptText="## ### ########" wrapText="true" />
+   <ChoiceBox layoutX="182.0" layoutY="227.0" prefHeight="39.0" prefWidth="397.0" />
+   <TextField id="lb_mensagem" fx:id="lb_mensagem" alignment="TOP_LEFT" layoutX="181.0" layoutY="280.0" prefHeight="61.0" prefWidth="398.0" />
+   <Button id="btn_enviar" fx:id="btn_enviar" layoutX="172.0" layoutY="377.0" mnemonicParsing="false" onAction="#ButtonClick" style="-fx-background-color: #000000;" text="Enviar Formulário de Contato" textAlignment="CENTER" textFill="WHITE" wrapText="true">
       <font>
-         <Font size="18.0"/>
+         <Font size="18.0" />
       </font>
    </Button>
 </AnchorPane>
